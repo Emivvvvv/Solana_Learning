@@ -3,3 +3,6 @@ hello_solana/target
 hello_solana/.idea
 solana_student_intro/target
 solana_student_intro/.idea
+solana_student_intro_v2/target
+solana_student_intro_v2/.idea
+.DS_Store

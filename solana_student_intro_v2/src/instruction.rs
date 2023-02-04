@@ -5,7 +5,7 @@ use solana_program::{program_error::ProgramError};
 pub enum IntroInstruction {
     AddStudent {
         name: String,
-        student_id: u8,
+        student_id: u32,
         message: String,
     }
 }
@@ -13,7 +13,7 @@ pub enum IntroInstruction {
 #[derive(BorshDeserialize)]
 struct StudentInfoPayload {
     name: String,
-    student_id: u8,
+    student_id: u32,
     message: String,
 }
 
@@ -30,5 +30,5 @@ impl IntroInstruction {
                 message: payload.message },
             _ => return Err(ProgramError::InvalidInstructionData)
         })
-    }
+}
 }
