@@ -1,0 +1,14 @@
+[package]
+name = "solana_student_intro"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+solana-program = "1.14.12"
+borsh = "0.9.3"
+borsh-derive = "0.9.3"
+thiserror = "1.0.38"
+
+[lib]
+crate-type = ["cdylib", "lib"]
